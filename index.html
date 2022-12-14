@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Donate to provide all the needs of the needy families" content="width=device-width, initial-scale=1.0">
+    <title>اتبرع فى الخير  donate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+        
+        <p>Donate to charity</p>
+        </div>
+        <div class="nav-right">
+           <p>اتبرع فى الخير </p>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="left-sidebar">
+            <div class="omp-links">
+               <p></p>
+               <img src="11.png" alt="Donate" href="https://paypal.me/mohamedah87861987?country.x=EG&locale.x=ar_EG" style="height:150px; width:120px">
+               <button>
+                <a href="https://paypal.me/mohamedah87861987?country.x=EG&locale.x=ar_EG" style="font-size: 25px; color: black;"<p> Donate</p>
+               </button>
+               <p>Donate to provide all the needs of the needy families</p>
+            </div>
+        </div>
+        <div class="main-content">
+              <!-- Start of shorte.st banner code -->
+<a href="http://join-shortest.com/ref/0a27853cc0?user-type=new"><img src="//static.shorte.st/bundles/smeuser/img/referral_banners/ru_300x250.png?2022-06-29.0" title="Зарабатывайте деньги на сокращенных ссылках" width="300" height="250" />#ref-menu</a>
+<!-- End of shorte.st banner code -->
+            <img src="12.jpg" alt="" style="height:300px; width:300px">
+            <div id="smart-button-container">
+                <div style="text-align: center;">
+                  <div id="paypal-button-container"></div>
+                </div>
+              </div>
+            <script src="https://www.paypal.com/sdk/js?client-id=AcllaH8H2uU3VE07z0de1wrm4mtAR_H6TGhcVYbiABHmG5-62VAMqgC679wmMSDgiBAIsGEFZqyaWdUJ&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
+            <script>
+              function initPayPalButton() {
+                paypal.Buttons({
+                  style: {
+                    shape: 'rect',
+                    color: 'gold',
+                    layout: 'vertical',
+                    label: 'paypal',
+                    
+                  },
+          
+                  createOrder: function(data, actions) {
+                    return actions.order.create({
+                      purchase_units: [{"amount":{"currency_code":"USD","value":1}}]
+                    });
+                  },
+          
+                  onApprove: function(data, actions) {
+                    return actions.order.capture().then(function(orderData) {
+                      
+                      // Full available details
+                      console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+          
+                      // Show a success message within this page, e.g.
+                      const element = document.getElementById('paypal-button-container');
+                      element.innerHTML = '';
+                      element.innerHTML = '<h3>Thank you for your payment!</h3>';
+          
+                      // Or go to another URL:  actions.redirect('thank_you.html');
+                      
+                    });
+                  },
+          
+                  onError: function(err) {
+                    console.log(err);
+                  }
+                }).render('#paypal-button-container');
+              }
+              initPayPalButton();
+            </script>
+        </div>
+        <div class="right-sidebar">
+            <div class="omp-links2">
+                <img src="y.png" alt="Donate" href="https://paypal.me/mohamedah87861987?country.x=EG&locale.x=ar_EG" style="height:200px; width:100px">
+                <button>
+                 <a href="https://paypal.me/mohamedah87861987?country.x=EG&locale.x=ar_EG" style="font-size: 25px; color: black; " dir="rtl"<p> اتبرع</p>
+                </button>
+                <br>
+                <p style="font-weight:bold">تبرعوا من أجل تقديم كافة الاحتياجات للأسرالمحتاجة</p>
+                <br>
+
+            </div>
+        </div>
+    </div>
+    <div>
+      <!-- Start of shorte.st banner code -->
+<a href="http://join-shortest.com/ref/0a27853cc0?user-type=new"><img src="//static.shorte.st/bundles/smeuser/img/referral_banners/728x90.png?2022-06-29.0" title="Shorte.st links, biggest payouts. Join now" width="728" height="90" />#ref-menu</a>
+<!-- End of shorte.st banner code -->
+    </div>
+    <footer class="j">
+        <nav>
+            <div class="nav-left">
+                <h2>اتبرع فى الخير </h2>
+            
+            </div>
+            <div class="nav-right">
+                <h2>Donate to charity</h2>
+            </div>
+        </nav>
+    </footer>
+</body>
+</html>
